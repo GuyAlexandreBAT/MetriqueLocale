@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MetriqueLocale — Rapports</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__logo">ML</span>
+      <span class="brand__name">MetriqueLocale</span>
+    </a>
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link" href="data.html">Données</a>
+      <a class="nav__link nav__link--active" href="reports.html">Rapports</a>
+      <a class="nav__link" href="studies.html">Études</a>
+      <a class="nav__link" href="about.html">Présentation</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="section">
+  <div class="container">
+    <div class="pageHead">
+      <div>
+        <h1>Rapports interactifs</h1>
+        <p class="muted">
+          Intégration directe via <strong>iframe</strong> (Power BI / Looker Studio / Tableau / Metabase).
+          Remplace simplement l’URL de l’iframe par ton lien “embed”.
+        </p>
+      </div>
+      <a class="btn btn--primary" href="contact.html">Demander un dashboard</a>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <p class="kicker">Rapport 01</p>
+        <h3>Démo — Prix & disponibilité</h3>
+        <p class="muted">Placeholder. En prod : un lien embed vers ton outil BI.</p>
+        <p class="tagRow"><span class="tag">Dashboard</span><span class="tag">Iframe</span></p>
+      </div>
+      <div class="card">
+        <p class="kicker">Rapport 02</p>
+        <h3>Démo — Indicateurs socio-éco</h3>
+        <p class="muted">Placeholder. Possibilité de restreindre l’accès (portail client).</p>
+        <p class="tagRow"><span class="tag">Accès privé</span><span class="tag">Portail</span></p>
+      </div>
+    </div>
+
+    <hr class="sep">
+
+    <div class="reportFrameWrap">
+      <!-- Remplace src par ton lien embed -->
+      <iframe
+        title="Rapport interactif (placeholder)"
+        src="about:blank"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+      ></iframe>
+    </div>
+
+    <div class="note">
+      <strong>Note :</strong> si ton rapport est privé, l’iframe affichera une demande de login.
+      C’est normal. En prod, on peut gérer des permissions (portail client).
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="muted">© 2025 MetriqueLocale. Tous droits réservés.</p>
+    <div class="footer__links">
+      <a href="about.html">Présentation</a>
+      <a href="data.html">Données</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
