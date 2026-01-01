@@ -1,83 +1,89 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MetriqueLocale — Rapports</title>
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
+<!doctype html><html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MetriqueLocale — Rapports interactifs</title>
+<link rel="stylesheet" href="assets/styles.css"></head><body>
 <header class="header">
   <div class="container header__inner">
-    <a class="brand" href="index.html">
-      <span class="brand__logo">ML</span>
-      <span class="brand__name">MetriqueLocale</span>
+    <a class="brand" href="index.html" aria-label="MetriqueLocale">
+      <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg></span>
+      <span>MetriqueLocale</span>
     </a>
-    <nav class="nav">
-      <a class="nav__link" href="index.html">Accueil</a>
-      <a class="nav__link" href="data.html">Données</a>
-      <a class="nav__link nav__link--active" href="reports.html">Rapports</a>
-      <a class="nav__link" href="studies.html">Études</a>
-      <a class="nav__link" href="about.html">Présentation</a>
-      <a class="nav__link" href="contact.html">Contact</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="" href="index.html">Accueil</a>
+      <a class="" href="data.html">Données</a>
+      <a class="active" href="reports.html">Rapports</a>
+      <a class="" href="studies.html">Études</a>
+      <a class="" href="about.html">Présentation</a>
+      <a class="" href="contact.html">Contact</a>
     </nav>
+    <div class="header__cta">
+      <a class="btn" href="data.html">Explorer les données</a>
+      <a class="btn primary" href="contact.html">Nous contacter</a>
+    </div>
   </div>
 </header>
-<main class="section">
-  <div class="container">
-    <div class="pageHead">
-      <div>
-        <h1>Rapports interactifs</h1>
-        <p class="muted">
-          Intégration directe via <strong>iframe</strong> (Power BI / Looker Studio / Tableau / Metabase).
-          Remplace simplement l’URL de l’iframe par ton lien “embed”.
-        </p>
-      </div>
-      <a class="btn btn--primary" href="contact.html">Demander un dashboard</a>
-    </div>
-
-    <div class="grid2">
-      <div class="card">
-        <p class="kicker">Rapport 01</p>
-        <h3>Démo — Prix & disponibilité</h3>
-        <p class="muted">Placeholder. En prod : un lien embed vers ton outil BI.</p>
-        <p class="tagRow"><span class="tag">Dashboard</span><span class="tag">Iframe</span></p>
-      </div>
-      <div class="card">
-        <p class="kicker">Rapport 02</p>
-        <h3>Démo — Indicateurs socio-éco</h3>
-        <p class="muted">Placeholder. Possibilité de restreindre l’accès (portail client).</p>
-        <p class="tagRow"><span class="tag">Accès privé</span><span class="tag">Portail</span></p>
-      </div>
-    </div>
-
-    <hr class="sep">
-
-    <div class="reportFrameWrap">
-      <!-- Remplace src par ton lien embed -->
-      <iframe
-        title="Rapport interactif (placeholder)"
-        src="about:blank"
-        loading="lazy"
-        referrerpolicy="no-referrer"
-      ></iframe>
-    </div>
-
-    <div class="note">
-      <strong>Note :</strong> si ton rapport est privé, l’iframe affichera une demande de login.
-      C’est normal. En prod, on peut gérer des permissions (portail client).
-    </div>
-  </div>
-</main>
+<section class="pageHeroNavy"><div class="container">
+<h1>Rapports interactifs</h1>
+<p class="muted" style="color: rgba(255,255,255,.75); max-width: 760px;">Explorez nos tableaux de bord en temps réel. Visualisez les données, filtrez par critères et exportez vos analyses.</p>
+</div></section>
+<main class="section white"><div class="container">
+<div class="reportLayout">
+<aside>
+<h3 style="font-size:18px;margin:0 0 12px;font-family:'Playfair Display',Georgia,serif;">Nos rapports</h3>
+<div class="reportList" id="reportList"></div>
+<div style="height:14px;"></div>
+<div class="notice"><div style="display:flex;gap:10px;align-items:flex-start;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17 9h-1V7a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4V7z"/></svg>
+<div><b style="display:block;margin-bottom:6px;">Accès aux rapports privés</b>
+<p class="muted">Certains rapports nécessitent une authentification. Contactez-nous pour obtenir vos identifiants.</p></div></div></div>
+</aside>
+<section>
+<div class="card reportMainCard">
+<div class="reportMainHead">
+<div><h3 id="reportTitle">Suivi des prix — Marchés de Brazzaville</h3>
+<p id="reportDesc" class="muted">Évolution hebdomadaire des prix du panier de base avec alertes automatiques sur les hausses significatives.</p></div>
+<a class="btn sm" id="openFullscreen" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3z"/><path fill="currentColor" d="M5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg> Plein écran</a>
+</div>
+<div class="reportFrame" id="reportFrame">
+<div id="reportPlaceholder" style="text-align:center;padding:22px;">
+<div style="width:64px;height:64px;border-radius:999px;background:#eef2ff;display:grid;place-items:center;color:#1e3a8a;margin:0 auto 14px;border:1px solid rgba(29,78,216,.14);"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg></div>
+<b style="display:block;margin-bottom:8px;color:var(--ink);font-family:'Playfair Display',Georgia,serif;font-size:18px;">Tableau de bord interactif</b>
+<div class="muted" style="max-width:520px;margin:0 auto;">Le rapport sera affiché ici une fois configuré. Intégration Power BI, Looker Studio, Tableau ou Metabase.</div>
+<div style="margin-top:12px;"><span style="font-size:12px;font-weight:800;padding:6px 10px;border-radius:999px;background:#f1f5f9;border:1px solid rgba(15,23,42,.08);">Power BI</span></div>
+</div>
+<iframe id="reportIframe" title="Rapport interactif" src="about:blank" loading="lazy" referrerpolicy="no-referrer"></iframe>
+</div></div>
+<div class="kpiRow">
+<div class="kpiCard"><div style="color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.35px;">Type de visualisation</div><div style="font-weight:900;margin-top:6px;" id="kpiTool">Power BI</div></div>
+<div class="kpiCard"><div style="color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.35px;">Mise à jour</div><div style="font-weight:900;margin-top:6px;" id="kpiRefresh">Temps réel</div></div>
+<div class="kpiCard"><div style="color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.35px;">Export disponible</div><div style="font-weight:900;margin-top:6px;" id="kpiExport">PDF, Excel, PNG</div></div>
+</div>
+</section>
+</div></div></main>
 <footer class="footer">
-  <div class="container footer__inner">
-    <p class="muted">© 2025 MetriqueLocale. Tous droits réservés.</p>
-    <div class="footer__links">
-      <a href="about.html">Présentation</a>
-      <a href="data.html">Données</a>
-      <a href="contact.html">Contact</a>
+  <div class="container">
+    <div class="footerGrid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg></span>
+          <span>MetriqueLocale</span>
+        </a>
+        <p class="muted" style="margin-top:12px; max-width: 420px; color: rgba(255,255,255,.72);">
+          Des données locales fiables, prêtes à être utilisées pour la décision.
+          Collecte terrain, structuration rigoureuse et analyses actionnables.
+        </p>
+        <div style="display:flex; gap:12px; align-items:center; margin:10px 0;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span>contact@metriquelocale.com</span></div>
+        <div style="display:flex; gap:12px; align-items:center; margin:10px 0;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.8-.4 1.2-.2 1.3.4 2.8.7 4.3.7.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10.7 22.2 1.8 13.3 1.8 2.7 1.8 2 2.3 1.5 3 1.5H6.3c.7 0 1.2.5 1.2 1.2 0 1.5.2 2.9.7 4.3.1.4 0 .9-.3 1.2l-2.3 2.6z"/></svg><span>+242 00 000 00 00</span></div>
+        <div style="display:flex; gap:12px; align-items:center; margin:10px 0;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Brazzaville, Congo</span></div>
+      </div>
+      <div><h4>SERVICES</h4><p><a href="index.html#services">Collecte de données</a></p><p><a href="index.html#services">Structuration</a></p><p><a href="index.html#services">Analyses & Rapports</a></p></div>
+      <div><h4>RESSOURCES</h4><p><a href="data.html">Catalogue de données</a></p><p><a href="reports.html">Rapports interactifs</a></p><p><a href="studies.html">Études réalisées</a></p></div>
+      <div><h4>ENTREPRISE</h4><p><a href="about.html">Présentation</a></p><p><a href="about.html#processus">Méthodologie</a></p><p><a href="contact.html">Contact</a></p></div>
+    </div>
+    <div class="footerBottom">
+      <div>© 2026 MetriqueLocale. Tous droits réservés.</div>
+      <div style="display:flex; gap:18px; flex-wrap:wrap;"><a href="#">Mentions légales</a><a href="#">Politique de confidentialité</a></div>
     </div>
   </div>
 </footer>
-</body>
-</html>
+<script src="assets/app.js"></script>
+</body></html>
