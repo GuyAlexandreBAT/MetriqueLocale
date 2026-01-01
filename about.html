@@ -1,86 +1,108 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MetriqueLocale — Présentation</title>
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MetriqueLocale — Présentation</title><link rel="stylesheet" href="assets/styles.css"></head>
 <body>
 <header class="header">
   <div class="container header__inner">
-    <a class="brand" href="index.html">
-      <span class="brand__logo">ML</span>
-      <span class="brand__name">MetriqueLocale</span>
+    <a class="brand" href="index.html" aria-label="MetriqueLocale">
+      <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg></span>
+      <span>MetriqueLocale</span>
     </a>
-    <nav class="nav">
-      <a class="nav__link" href="index.html">Accueil</a>
-      <a class="nav__link" href="data.html">Données</a>
-      <a class="nav__link" href="reports.html">Rapports</a>
-      <a class="nav__link" href="studies.html">Études</a>
-      <a class="nav__link nav__link--active" href="about.html">Présentation</a>
-      <a class="nav__link" href="contact.html">Contact</a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="" href="index.html">Accueil</a>
+      <a class="" href="data.html">Données</a>
+      <a class="" href="reports.html">Rapports</a>
+      <a class="" href="studies.html">Études</a>
+      <a class="active" href="about.html">Présentation</a>
+      <a class="" href="contact.html">Contact</a>
     </nav>
+
+    <div class="header__cta">
+      <a class="btn" href="data.html">Explorer les données</a>
+      <a class="btn primary" href="contact.html">Nous contacter</a>
+    </div>
   </div>
 </header>
-<main class="section">
+<section class="pageHero"><div class="container"><h1>Présentation</h1>
+<p class="muted">MetriqueLocale améliore l'accès à des données locales fiables et documentées pour soutenir la décision.</p></div></section>
+<main class="section white">
   <div class="container">
-    <div class="pageHead">
-      <div>
-        <h1>Présentation</h1>
-        <p class="muted">Notre mission : améliorer l’accès à des données locales fiables, documentées et actionnables.</p>
-      </div>
-      <a class="btn btn--primary" href="data.html">Voir le catalogue</a>
-    </div>
-
-    <div class="grid2">
+    <div class="why" style="grid-template-columns: 1fr 1fr;">
       <div class="card">
-        <h2>Mission</h2>
-        <p class="muted">
-          MetriqueLocale aide les institutions, ONG et entreprises à décider avec confiance grâce à des données
-          locales (collectées sur le terrain ou consolidées depuis des sources existantes), propres et documentées.
-        </p>
-        <p class="tagRow"><span class="tag">Local</span><span class="tag">Fiable</span><span class="tag">Documenté</span></p>
+        <h2 style="margin-top:0;">Mission</h2>
+        <p class="muted">Nous aidons les institutions, ONG et entreprises à prendre des décisions éclairées grâce à la collecte, la structuration et l'analyse de données terrain en Afrique centrale.</p>
+        <p class="muted"><b>Livrables :</b> Dataset + Dashboard + Rapport PDF</p>
       </div>
-
-      <div class="card">
-        <h2>Ce qui nous différencie</h2>
-        <p class="muted">Qualité et traçabilité dès la collecte, jusqu’au livrable.</p>
-        <ul class="checklist">
-          <li>Protocoles de collecte + formation des enquêteurs</li>
-          <li>Contrôles qualité (cohérence, doublons, valeurs aberrantes)</li>
-          <li>Anonymisation & respect des règles de confidentialité</li>
-          <li>Métadonnées + dictionnaire de variables</li>
+      <div class="card" id="methodologie">
+        <h2 style="margin-top:0;">Méthodologie</h2>
+        <ul class="bullets">
+          <li>Cadrage : objectifs, périmètre, échantillon</li>
+          <li>Collecte : questionnaires digitalisés & terrain</li>
+          <li>Contrôles : cohérence, doublons, valeurs aberrantes</li>
+          <li>Anonymisation : confidentialité & conformité</li>
+          <li>Analyse : KPIs, tendances, segmentation</li>
+          <li>Livraison : dataset + rapport + dashboard</li>
         </ul>
       </div>
     </div>
-
-    <hr class="sep">
-
-    <div class="card">
-      <h2>Processus</h2>
-      <div class="grid2">
-        <div>
-          <p class="muted"><strong>1) Cadrage</strong> — objectifs, périmètre, échantillon, planning.</p>
-          <p class="muted"><strong>2) Collecte</strong> — terrain, questionnaires, sources administratives.</p>
-          <p class="muted"><strong>3) Qualité</strong> — contrôles, validation, anonymisation.</p>
-        </div>
-        <div>
-          <p class="muted"><strong>4) Analyse</strong> — KPIs, tendances, segments, comparaisons.</p>
-          <p class="muted"><strong>5) Livraison</strong> — dataset + dashboard + rapport PDF.</p>
-          <p class="muted"><strong>6) Suivi</strong> — mises à jour, versioning, baromètres.</p>
-        </div>
+    <div class="ctaBand" style="margin-top: 26px;">
+      <h2>Parlons de votre besoin</h2>
+      <p>Besoin d’un baromètre, d’une enquête, ou d’un dataset spécifique ? On vous répond rapidement avec une proposition claire.</p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <a class="btn" href="contact.html">Nous contacter <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 5l7 7-7 7-1.4-1.4L16.2 13H4v-2h12.2l-4.6-4.6L13 5z"/></svg></a>
+        <a class="btn ghost" href="data.html" style="color:#fff; border-color: rgba(255,255,255,.24);">Voir les données</a>
       </div>
     </div>
   </div>
 </main>
 <footer class="footer">
-  <div class="container footer__inner">
-    <p class="muted">© 2025 MetriqueLocale. Tous droits réservés.</p>
-    <div class="footer__links">
-      <a href="about.html">Présentation</a>
-      <a href="data.html">Données</a>
-      <a href="contact.html">Contact</a>
+  <div class="container">
+    <div class="footerGrid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg></span>
+          <span>MetriqueLocale</span>
+        </a>
+        <p class="muted" style="margin-top:12px; max-width: 420px; color: rgba(255,255,255,.72);">
+          Des données locales fiables, prêtes à être utilisées pour la décision.
+          Collecte terrain, structuration rigoureuse et analyses actionnables.
+        </p>
+
+        <div class="contactLine"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span>contact@metriquelocale.com</span></div>
+        <div class="contactLine"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.8-.4 1.2-.2 1.3.4 2.8.7 4.3.7.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10.7 22.2 1.8 13.3 1.8 2.7 1.8 2 2.3 1.5 3 1.5H6.3c.7 0 1.2.5 1.2 1.2 0 1.5.2 2.9.7 4.3.1.4 0 .9-.3 1.2l-2.3 2.6z"/></svg><span>+242 00 000 00 00</span></div>
+        <div class="contactLine"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Brazzaville, Congo</span></div>
+      </div>
+
+      <div>
+        <h4>SERVICES</h4>
+        <p><a href="index.html#services">Collecte de données</a></p>
+        <p><a href="index.html#services">Structuration</a></p>
+        <p><a href="index.html#services">Analyses & Rapports</a></p>
+      </div>
+
+      <div>
+        <h4>RESSOURCES</h4>
+        <p><a href="data.html">Catalogue de données</a></p>
+        <p><a href="reports.html">Rapports interactifs</a></p>
+        <p><a href="studies.html">Études réalisées</a></p>
+      </div>
+
+      <div>
+        <h4>ENTREPRISE</h4>
+        <p><a href="about.html">Présentation</a></p>
+        <p><a href="about.html#methodologie">Méthodologie</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <div>© 2026 MetriqueLocale. Tous droits réservés.</div>
+      <div style="display:flex; gap:18px; flex-wrap:wrap;">
+        <a href="#" aria-disabled="true">Mentions légales</a>
+        <a href="#" aria-disabled="true">Politique de confidentialité</a>
+      </div>
     </div>
   </div>
 </footer>
