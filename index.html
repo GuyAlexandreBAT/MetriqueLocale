@@ -3,166 +3,359 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MetriqueLocale — Données & études</title>
+  <title>MetriqueLocale — Données locales fiables</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <meta name="description" content="MetriqueLocale collecte, structure et analyse des données terrain pour l’Afrique centrale. Datasets téléchargeables et rapports interactifs.">
 </head>
 <body>
 <header class="header">
   <div class="container header__inner">
-    <a class="brand" href="index.html">
-      <span class="brand__logo">ML</span>
-      <span class="brand__name">MetriqueLocale</span>
+    <a class="brand" href="index.html" aria-label="MetriqueLocale">
+      <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg></span>
+      <span>MetriqueLocale</span>
     </a>
-    <nav class="nav">
-      <a class="nav__link nav__link--active" href="index.html">Accueil</a>
-      <a class="nav__link" href="data.html">Données</a>
-      <a class="nav__link" href="reports.html">Rapports</a>
-      <a class="nav__link" href="studies.html">Études</a>
-      <a class="nav__link" href="about.html">Présentation</a>
-      <a class="nav__link" href="contact.html">Contact</a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="active" href="index.html">Accueil</a>
+      <a class="" href="data.html">Données</a>
+      <a class="" href="reports.html">Rapports</a>
+      <a class="" href="studies.html">Études</a>
+      <a class="" href="about.html">Présentation</a>
+      <a class="" href="contact.html">Contact</a>
     </nav>
+
+    <div class="header__cta">
+      <a class="btn" href="data.html">Explorer les données</a>
+      <a class="btn primary" href="contact.html">Nous contacter</a>
+    </div>
   </div>
 </header>
 <main>
   <section class="hero">
     <div class="container hero__grid">
-      <div class="hero__copy">
-        <p class="badge"><span class="dot"></span>Collecte • Structuration • Analyse</p>
-        <h1>Des données locales, prêtes à décider.</h1>
-        <p class="muted">
-          MetriqueLocale produit des jeux de données fiables (terrain, administration, marché) et des
-          rapports interactifs pour les institutions, ONG et entreprises.
+      <div>
+        <div class="pill"><i></i> Données fiables pour l'Afrique centrale</div>
+        <h1>Des données locales<br>fiables, prêtes pour la décision</h1>
+        <p class="muted" style="color: rgba(255,255,255,.72); max-width: 720px;">
+          MetriqueLocale collecte, structure et analyse les données terrain pour les institutions, ONG et entreprises
+          qui ont besoin d'informations précises pour agir efficacement.
         </p>
+
         <div class="hero__cta">
-          <a class="btn btn--primary" href="data.html">Explorer les données</a>
-          <a class="btn" href="contact.html">Nous contacter</a>
+          <a class="btn" href="data.html">Explorer les données <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 5l7 7-7 7-1.4-1.4L16.2 13H4v-2h12.2l-4.6-4.6L13 5z"/></svg></a>
+          <a class="btn ghost" href="contact.html" style="color:#fff;">Demander une étude</a>
         </div>
 
-        <div class="hero__stats">
-          <div class="stat"><div class="stat__kpi">3</div><div class="stat__label">datasets publiés (démo)</div></div>
-          <div class="stat"><div class="stat__kpi">4</div><div class="stat__label">études présentées (démo)</div></div>
-          <div class="stat"><div class="stat__kpi">7j</div><div class="stat__label">délai moyen (pilot)</div></div>
+        <div class="stats">
+          <div class="stat">
+            <div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C7.6 2 4 3.8 4 6v12c0 2.2 3.6 4 8 4s8-1.8 8-4V6c0-2.2-3.6-4-8-4zm0 2c3.9 0 6 .9 6 2s-2.1 2-6 2-6-.9-6-2 2.1-2 6-2zm0 6c3.9 0 6-.9 6-2v3c0 1.1-2.1 2-6 2s-6-.9-6-2V8c0 1.1 2.1 2 6 2zm0 6c3.9 0 6-.9 6-2v3c0 1.1-2.1 2-6 2s-6-.9-6-2v-3c0 1.1 2.1 2 6 2z"/></svg><span>DATASETS</span></div>
+            <div class="value">25+</div>
+          </div>
+          <div class="stat">
+            <div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg><span>ÉTUDES</span></div>
+            <div class="value">50+</div>
+          </div>
+          <div class="stat">
+            <div class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h18v2H3V3zm2 4h14v14H5V7zm2 2v10h10V9H7z"/></svg><span>RAPPORTS</span></div>
+            <div class="value">100+</div>
+          </div>
         </div>
       </div>
 
-      <div class="panel">
-        <div class="panel__top">
-          <div>
-            <h3>Catalogue + Rapports</h3>
-            <p class="muted">
-              Un site vitrine pro aujourd’hui. Une plateforme data demain (comptes, API, portail client).
-            </p>
+      <div style="align-self:stretch;">
+        <div class="card" style="background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.14); box-shadow:none;">
+          <h3 style="color:#fff; margin-top:4px;">Ce que vous obtenez</h3>
+          <p class="muted" style="color: rgba(255,255,255,.72);">
+            Des livrables prêts à l'emploi : datasets documentés, dashboards interactifs et rapports PDF.
+          </p>
+          <ul class="bullets" style="color: rgba(255,255,255,.72);">
+            <li>Collecte terrain (quantitative & qualitative)</li>
+            <li>Contrôles qualité et traçabilité</li>
+            <li>Dictionnaire de variables & versioning</li>
+          </ul>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;">
+            <a class="btn sm" href="reports.html" style="background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.20); color:#fff;">Voir les rapports</a>
+            <a class="btn sm primary" href="contact.html">Nous contacter</a>
           </div>
-          <span class="panel__pill">Vitrine professionnelle</span>
         </div>
-        <ul class="checklist">
-          <li>Datasets téléchargeables (CSV)</li>
-          <li>Métadonnées : période, couverture, variables</li>
-          <li>Rapports interactifs via iframe</li>
-        </ul>
-        <div class="panel__actions">
-          <a class="btn btn--small btn--primary" href="data.html">Voir le catalogue</a>
-          <a class="btn btn--small" href="reports.html">Voir les rapports</a>
-        </div>
-        <p class="small">Astuce : remplace les iframes par tes liens Power BI / Looker Studio / Tableau.</p>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section id="services" class="section white">
     <div class="container">
       <div class="section__head">
-        <h2>Ce qu’on livre</h2>
-        <p class="muted">Un service de bout en bout, du terrain jusqu’aux décisions.</p>
+        <h2>Nos services</h2>
+        <p class="muted">Une chaîne de valeur complète, de la collecte terrain à la livraison d'insights actionnables.</p>
       </div>
 
-      <div class="grid3">
+      <div class="cards3">
         <article class="card">
-          <p class="kicker">Service 01</p>
-          <h3>Collecte</h3>
-          <p class="muted">Questionnaires, enquêtes terrain, audits, entretiens, digitalisation.</p>
-          <p class="tagRow"><span class="tag">Terrain</span><span class="tag">Mobile</span><span class="tag">Échantillonnage</span></p>
+          <div class="iconBox"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16 4h-1.2a3 3 0 0 0-5.6 0H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-4-1a1 1 0 0 1 1 1h-2a1 1 0 0 1 1-1z"/></svg></div>
+          <h3>Collecte de données</h3>
+          <p class="muted">Enquêtes terrain, questionnaires digitalisés, audits et observations. Nos équipes locales assurent une collecte rigoureuse et représentative.</p>
+          <ul class="bullets">
+            <li>Enquêtes quantitatives</li>
+            <li>Questionnaires digitaux</li>
+            <li>Audits & observations</li>
+          </ul>
         </article>
 
         <article class="card">
-          <p class="kicker">Service 02</p>
+          <div class="iconBox"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C7.6 2 4 3.8 4 6v12c0 2.2 3.6 4 8 4s8-1.8 8-4V6c0-2.2-3.6-4-8-4zm0 2c3.9 0 6 .9 6 2s-2.1 2-6 2-6-.9-6-2 2.1-2 6-2zm0 6c3.9 0 6-.9 6-2v3c0 1.1-2.1 2-6 2s-6-.9-6-2V8c0 1.1 2.1 2 6 2zm0 6c3.9 0 6-.9 6-2v3c0 1.1-2.1 2-6 2s-6-.9-6-2v-3c0 1.1 2.1 2 6 2z"/></svg></div>
           <h3>Structuration</h3>
-          <p class="muted">Nettoyage, normalisation, anonymisation, dictionnaire de variables.</p>
-          <p class="tagRow"><span class="tag">Qualité</span><span class="tag">Traçabilité</span><span class="tag">Versioning</span></p>
+          <p class="muted">Nettoyage, validation, anonymisation et documentation complète. Chaque dataset est livré avec son dictionnaire de variables.</p>
+          <ul class="bullets">
+            <li>Nettoyage & validation</li>
+            <li>Anonymisation</li>
+            <li>Dictionnaire de variables</li>
+          </ul>
         </article>
 
         <article class="card">
-          <p class="kicker">Service 03</p>
-          <h3>Analyses & rapports</h3>
-          <p class="muted">Dashboards interactifs + rapport PDF clair, actionnable.</p>
-          <p class="tagRow"><span class="tag">KPIs</span><span class="tag">Dashboard</span><span class="tag">PDF</span></p>
+          <div class="iconBox"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg></div>
+          <h3>Analyses & Rapports</h3>
+          <p class="muted">Tableaux de bord interactifs, indicateurs clés et rapports détaillés. Des livrables prêts à être présentés et exploités.</p>
+          <ul class="bullets">
+            <li>Dashboards interactifs</li>
+            <li>Indicateurs KPI</li>
+            <li>Rapports PDF</li>
+          </ul>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section section--alt">
+  <section class="section white">
     <div class="container">
-      <div class="grid2">
-        <div class="card">
-          <h2>Pourquoi MetriqueLocale ?</h2>
-          <p class="muted">
-            Parce que la décision a besoin de données locales fiables : contrôles qualité, documentation, et livrables
-            utilisables immédiatement.
+      <div class="why">
+        <div>
+          <h2>Pourquoi choisir<br>MetriqueLocale ?</h2>
+          <p class="muted" style="max-width: 640px;">
+            Nous combinons rigueur méthodologique et connaissance du terrain pour produire des données fiables et exploitables.
+            Chaque projet bénéficie d'un accompagnement personnalisé.
           </p>
-          <p class="tagRow"><span class="tag">Contrôles</span><span class="tag">Métadonnées</span><span class="tag">Anonymisation</span></p>
+
+          <div class="featureGrid">
+            <div class="feature">
+              <div class="miniIcon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l8 4v6c0 5-3.4 9.7-8 10-4.6-.3-8-5-8-10V6l8-4zm0 2.2L6 7v5c0 3.9 2.5 7.6 6 7.9 3.5-.3 6-4 6-7.9V7l-6-2.8z"/></svg></div>
+              <div>
+                <b>Qualité garantie</b>
+                <p class="muted">Contrôles systématiques, validation multi‑niveaux et traçabilité complète.</p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="miniIcon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm1 7V3.5L19.5 9H15z"/></svg></div>
+              <div>
+                <b>Documentation complète</b>
+                <p class="muted">Métadonnées, dictionnaire de variables, versioning et notes méthodologiques.</p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="miniIcon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+              <div>
+                <b>Livrables actionnables</b>
+                <p class="muted">Dataset + dashboard interactif + rapport PDF, prêts à l'emploi.</p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="miniIcon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm-1 11l-3-3 1.4-1.4L11 10.2l3.6-3.6L16 8l-5 5z"/></svg></div>
+              <div>
+                <b>Expertise locale</b>
+                <p class="muted">Réseau d'enquêteurs formés, connaissance du terrain et adaptation au contexte.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card">
-          <h2>Pour qui ?</h2>
-          <p class="muted">Institutions • ONG • bailleurs • entreprises • cabinets de conseil • investisseurs.</p>
-          <hr class="sep">
-          <a class="btn btn--primary" href="contact.html">Demander une étude</a>
+        <div class="steps">
+          <div class="step">
+            <div class="n">1</div>
+            <div>
+              <b>Cadrage & conception</b>
+              <div class="muted">Définition des objectifs et de la méthodologie</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="n">2</div>
+            <div>
+              <b>Collecte terrain</b>
+              <div class="muted">Enquêtes avec contrôle qualité en temps réel</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="n">3</div>
+            <div>
+              <b>Traitement & analyse</b>
+              <div class="muted">Nettoyage, validation et production d'indicateurs</div>
+            </div>
+          </div>
+          <div class="step active">
+            <div class="n">4</div>
+            <div>
+              <b>Livraison complète</b>
+              <div class="muted">Dataset + Dashboard + Rapport PDF</div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="container">
+      <div class="section__head">
+        <h2>Pour qui travaillons‑nous ?</h2>
+        <p class="muted">Nous accompagnons les organisations qui ont besoin de données fiables pour prendre des décisions éclairées.</p>
+      </div>
+
+      <div class="audience">
+        <div class="audCard">
+          <div class="audIcon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 22V2h10v6h6v14H4zm2-2h2v-2H6v2zm0-4h2v-2H6v2zm0-4h2v-2H6v2zm0-4h2V6H6v2zm4 12h2v-2h-2v2zm0-4h2v-2h-2v2zm0-4h2V6h-2v2zm6 12h2v-2h-2v2zm0-4h2v-2h-2v2zm0-4h2v-2h-2v2z"/></svg></div>
+          <b>Institutions publiques</b>
+          <p class="muted">Ministères, agences nationales et collectivités locales</p>
+        </div>
+        <div class="audCard">
+          <div class="audIcon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm7.9 9h-3.1a15.3 15.3 0 0 0-1.1-5A8 8 0 0 1 19.9 11zM12 4c1.2 1.6 2.1 4 2.4 7H9.6C9.9 8 10.8 5.6 12 4zM4.1 13h3.1a15.3 15.3 0 0 0 1.1 5A8 8 0 0 1 4.1 13zm3.1-2H4.1a8 8 0 0 1 4.2-5 15.3 15.3 0 0 0-1.1 5zm2.4 2h4.8c-.3 3-1.2 5.4-2.4 7-1.2-1.6-2.1-4-2.4-7zm7.2 0h3.1a8 8 0 0 1-4.2 5 15.3 15.3 0 0 0 1.1-5z"/></svg></div>
+          <b>ONG & Organisations internationales</b>
+          <p class="muted">Bailleurs de fonds, agences onusiennes et ONG</p>
+        </div>
+        <div class="audCard">
+          <div class="audIcon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 4h4v2h-4V4zm10 4H4c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-9c0-1.1-.9-2-2-2zm0 5h-6v2h-4v-2H4v-3h16v3z"/></svg></div>
+          <b>Entreprises</b>
+          <p class="muted">Multinationales, PME locales et investisseurs</p>
+        </div>
+        <div class="audCard">
+          <div class="audIcon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zM8 11c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13zm8 0c-.3 0-.6 0-1 .1 1.2.9 2 2 2 3.4V19h7v-2.5c0-2.3-4.7-3.5-8-3.5z"/></svg></div>
+          <b>Cabinets de conseil</b>
+          <p class="muted">Consultants, bureaux d'études et instituts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="container">
+      <div class="splitHead">
+        <div>
+          <h2>Derniers datasets</h2>
+          <p class="muted">Données structurées et documentées, prêtes à l'emploi</p>
+        </div>
+        <a class="btn sm" href="data.html">Voir tout le catalogue <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 5l7 7-7 7-1.4-1.4L16.2 13H4v-2h12.2l-4.6-4.6L13 5z"/></svg></a>
+      </div>
+
+      <div class="cards3">
+        <article class="card">
+          <div class="tags"><span class="tag">Prix</span><span class="tag">Consommation</span></div>
+          <h3>Prix du marché — Panier de base</h3>
+          <p class="muted">Suivi hebdomadaire des prix des produits essentiels sur les marchés de Brazzaville.</p>
+          <div class="metaRow"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3v18H4V4h3V2zm13 6H6v12h14V8z"/></svg> Hebdomadaire</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> Brazzaville</span></div>
+          <div class="cardFooter">
+            <a class="downloadBtn" href="assets/downloads/prix-marche-panier-base.csv" download><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4V7h3l-5-5z"/></svg> Télécharger</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="tags"><span class="tag">Emploi</span><span class="tag">Jeunesse</span></div>
+          <h3>Emploi & Jeunesse urbaine</h3>
+          <p class="muted">Enquête annuelle sur l'emploi des jeunes de 18-35 ans en zone urbaine.</p>
+          <div class="metaRow"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3v18H4V4h3V2zm13 6H6v12h14V8z"/></svg> Annuel</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> Congo</span></div>
+          <div class="cardFooter">
+            <a class="downloadBtn" href="assets/downloads/emploi-jeunesse-urbaine.csv" download><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4V7h3l-5-5z"/></svg> Télécharger</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="tags"><span class="tag">Eau</span><span class="tag">Santé</span></div>
+          <h3>Accès aux services essentiels</h3>
+          <p class="muted">Cartographie de l'accès à l'eau, l'électricité et la santé par localité.</p>
+          <div class="metaRow"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3v18H4V4h3V2zm13 6H6v12h14V8z"/></svg> Annuel</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> Congo</span></div>
+          <div class="cardFooter">
+            <a class="downloadBtn" href="assets/downloads/acces-services-essentiels.csv" download><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4V7h3l-5-5z"/></svg> Télécharger</a>
+          </div>
+        </article>
+      </div>
+
+      <div style="height:24px;"></div>
+
+      <div class="splitHead">
+        <div>
+          <h2>Études réalisées</h2>
+          <p class="muted">Un portfolio de projets réussis pour des clients exigeants</p>
+        </div>
+        <a class="btn sm" href="studies.html">Voir toutes les études <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 5l7 7-7 7-1.4-1.4L16.2 13H4v-2h12.2l-4.6-4.6L13 5z"/></svg></a>
+      </div>
+
+      <div class="cards3">
+        <article class="card"><span class="tag">Agroalimentaire</span><h3 style="margin-top:10px;">Étude de marché — Secteur agroalimentaire</h3><p class="muted">Client : Multinationale</p></article>
+        <article class="card"><span class="tag">Développement</span><h3 style="margin-top:10px;">Évaluation d'impact — Programme d'accès à l'eau</h3><p class="muted">Client : ONG internationale</p></article>
+        <article class="card"><span class="tag">Urbanisme</span><h3 style="margin-top:10px;">Cartographie socio‑économique — Zone périurbaine</h3><p class="muted">Client : Administration locale</p></article>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="pageHead">
-        <div>
-          <h2>Aperçu</h2>
-          <p class="muted">Exemples (démo) : datasets + études.</p>
+      <div class="ctaBand">
+        <h2>Besoin de données fiables pour<br>votre projet ?</h2>
+        <p>Discutons de vos besoins. Nous pouvons concevoir une étude sur‑mesure ou vous orienter vers nos datasets existants.</p>
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a class="btn" href="contact.html">Demander un devis <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 5l7 7-7 7-1.4-1.4L16.2 13H4v-2h12.2l-4.6-4.6L13 5z"/></svg></a>
+          <a class="btn ghost" href="data.html" style="color:#fff; border-color: rgba(255,255,255,.24);">Explorer le catalogue</a>
         </div>
-        <div>
-          <a class="btn btn--small" href="data.html">Tous les datasets</a>
-          <a class="btn btn--small" href="studies.html">Toutes les études</a>
-        </div>
-      </div>
-
-      <div class="grid3">
-        <article class="card card--tight">
-          <div class="card__row"><h3>Prix du marché — 2025 Q4</h3><span class="tag">CSV</span></div>
-          <p class="muted">Panier de base, relevés hebdomadaires.</p>
-          <a class="btn btn--small btn--primary" href="assets/downloads/prix-marche-2025-q4.csv" download>Télécharger</a>
-        </article>
-        <article class="card card--tight">
-          <div class="card__row"><h3>Emploi des jeunes — 2024</h3><span class="tag">CSV</span></div>
-          <p class="muted">Indicateurs emploi/formation par zone et tranche d’âge.</p>
-          <a class="btn btn--small btn--primary" href="assets/downloads/emploi-jeunes-2024.csv" download>Télécharger</a>
-        </article>
-        <article class="card card--tight">
-          <div class="card__row"><h3>Accès à l’eau — 2023</h3><span class="tag">CSV</span></div>
-          <p class="muted">Couverture d’accès à l’eau par zone (agrégé).</p>
-          <a class="btn btn--small btn--primary" href="assets/downloads/acces-eau-2023.csv" download>Télécharger</a>
-        </article>
       </div>
     </div>
   </section>
 </main>
 <footer class="footer">
-  <div class="container footer__inner">
-    <p class="muted">© 2025 MetriqueLocale. Tous droits réservés.</p>
-    <div class="footer__links">
-      <a href="about.html">Présentation</a>
-      <a href="data.html">Données</a>
-      <a href="contact.html">Contact</a>
+  <div class="container">
+    <div class="footerGrid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg></span>
+          <span>MetriqueLocale</span>
+        </a>
+        <p class="muted" style="margin-top:12px; max-width: 420px; color: rgba(255,255,255,.72);">
+          Des données locales fiables, prêtes à être utilisées pour la décision.
+          Collecte terrain, structuration rigoureuse et analyses actionnables.
+        </p>
+
+        <div class="contactLine"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span>contact@metriquelocale.com</span></div>
+        <div class="contactLine"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.8-.4 1.2-.2 1.3.4 2.8.7 4.3.7.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10.7 22.2 1.8 13.3 1.8 2.7 1.8 2 2.3 1.5 3 1.5H6.3c.7 0 1.2.5 1.2 1.2 0 1.5.2 2.9.7 4.3.1.4 0 .9-.3 1.2l-2.3 2.6z"/></svg><span>+242 00 000 00 00</span></div>
+        <div class="contactLine"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Brazzaville, Congo</span></div>
+      </div>
+
+      <div>
+        <h4>SERVICES</h4>
+        <p><a href="index.html#services">Collecte de données</a></p>
+        <p><a href="index.html#services">Structuration</a></p>
+        <p><a href="index.html#services">Analyses & Rapports</a></p>
+      </div>
+
+      <div>
+        <h4>RESSOURCES</h4>
+        <p><a href="data.html">Catalogue de données</a></p>
+        <p><a href="reports.html">Rapports interactifs</a></p>
+        <p><a href="studies.html">Études réalisées</a></p>
+      </div>
+
+      <div>
+        <h4>ENTREPRISE</h4>
+        <p><a href="about.html">Présentation</a></p>
+        <p><a href="about.html#methodologie">Méthodologie</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <div>© 2026 MetriqueLocale. Tous droits réservés.</div>
+      <div style="display:flex; gap:18px; flex-wrap:wrap;">
+        <a href="#" aria-disabled="true">Mentions légales</a>
+        <a href="#" aria-disabled="true">Politique de confidentialité</a>
+      </div>
     </div>
   </div>
 </footer>
