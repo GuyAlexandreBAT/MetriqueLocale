@@ -1,103 +1,70 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MetriqueLocale — Données</title>
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
+<!doctype html><html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MetriqueLocale — Données</title><link rel="stylesheet" href="assets/styles.css"></head><body>
 <header class="header">
   <div class="container header__inner">
-    <a class="brand" href="index.html">
-      <span class="brand__logo">ML</span>
-      <span class="brand__name">MetriqueLocale</span>
+    <a class="brand" href="index.html" aria-label="MetriqueLocale">
+      <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg></span>
+      <span>MetriqueLocale</span>
     </a>
-    <nav class="nav">
-      <a class="nav__link" href="index.html">Accueil</a>
-      <a class="nav__link nav__link--active" href="data.html">Données</a>
-      <a class="nav__link" href="reports.html">Rapports</a>
-      <a class="nav__link" href="studies.html">Études</a>
-      <a class="nav__link" href="about.html">Présentation</a>
-      <a class="nav__link" href="contact.html">Contact</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="" href="index.html">Accueil</a>
+      <a class="active" href="data.html">Données</a>
+      <a class="" href="reports.html">Rapports</a>
+      <a class="" href="studies.html">Études</a>
+      <a class="" href="about.html">Présentation</a>
+      <a class="" href="contact.html">Contact</a>
     </nav>
+    <div class="header__cta">
+      <a class="btn" href="data.html">Explorer les données</a>
+      <a class="btn primary" href="contact.html">Nous contacter</a>
+    </div>
   </div>
 </header>
-<main class="section">
-  <div class="container">
-    <div class="pageHead">
-      <div>
-        <h1>Données</h1>
-        <p class="muted">Catalogue (démo) de jeux de données téléchargeables.</p>
-      </div>
-      <div class="card card--tight">
-        <p class="kicker">Licence & usage</p>
-        <p class="muted">Datasets démo. En prod : versions, licences, et accès par client/contrat.</p>
-      </div>
-    </div>
-
-    <div class="grid3">
-      <article class="card">
-        <div class="card__row">
-          <h3>Prix du marché — 2025 Q4</h3>
-          <span class="tag">Hebdomadaire</span>
-        </div>
-        <p class="muted">Prix moyens par catégorie (panier de base), relevés hebdomadaires.</p>
-        <p class="tagRow"><span class="tag">Brazzaville (démo)</span><span class="tag">CSV</span><span class="tag">prix</span><span class="tag">inflation</span></p>
-        <hr class="sep">
-        <p class="muted"><strong>Période :</strong> Oct–Déc 2025</p>
-        <p class="muted"><strong>Variables :</strong> date, zone, categorie, prix</p>
-        <div class="panel__actions">
-          <a class="btn btn--small btn--primary" href="assets/downloads/prix-marche-2025-q4.csv" download>Télécharger</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__row">
-          <h3>Emploi des jeunes — 2024</h3>
-          <span class="tag">Annuel</span>
-        </div>
-        <p class="muted">Indicateurs emploi/formation par zone et tranche d’âge.</p>
-        <p class="tagRow"><span class="tag">National (démo)</span><span class="tag">CSV</span><span class="tag">emploi</span><span class="tag">jeunesse</span></p>
-        <hr class="sep">
-        <p class="muted"><strong>Période :</strong> 2024</p>
-        <p class="muted"><strong>Variables :</strong> zone, age_group, taux_emploi, taux_chomage</p>
-        <div class="panel__actions">
-          <a class="btn btn--small btn--primary" href="assets/downloads/emploi-jeunes-2024.csv" download>Télécharger</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__row">
-          <h3>Accès à l’eau — 2023</h3>
-          <span class="tag">Annuel</span>
-        </div>
-        <p class="muted">Couverture d’accès à l’eau par quartier/zone (agrégé).</p>
-        <p class="tagRow"><span class="tag">Urbain (démo)</span><span class="tag">CSV</span><span class="tag">eau</span><span class="tag">social</span></p>
-        <hr class="sep">
-        <p class="muted"><strong>Période :</strong> 2023</p>
-        <p class="muted"><strong>Variables :</strong> zone, couverture_eau, source</p>
-        <div class="panel__actions">
-          <a class="btn btn--small btn--primary" href="assets/downloads/acces-eau-2023.csv" download>Télécharger</a>
-        </div>
-      </article>
-    </div>
-
-    <div class="note">
-      <strong>Prochaine étape (plateforme) :</strong> pages “Détail dataset” + dictionnaire complet,
-      versioning, compte client, API, paiement, et portail de rapports.
-    </div>
-  </div>
-</main>
+<section class="pageHeroNavy" style="padding-bottom:30px;"><div class="container">
+<h1>Données</h1>
+<p class="muted" style="color: rgba(255,255,255,.75); max-width: 860px;">Accédez à nos jeux de données structurés et documentés. Recherchez, filtrez et téléchargez.</p>
+</div></section>
+<main class="section white" style="padding-top:26px;"><div class="container">
+<div class="toolbar">
+<div class="searchBox"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 1 5.3 14l4.2 4.2-1.4 1.4-4.2-4.2A8 8 0 0 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg><input id="dataSearch" placeholder="Rechercher un dataset..." autocomplete="off"></div>
+<div class="selectBox"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18v2H3V5zm4 6h10v2H7v-2zm3 6h4v2h-4v-2z"/></svg><select id="themeFilter">
+<option value="Tous">Tous</option><option value="Prix">Prix</option><option value="Consommation">Consommation</option>
+<option value="Emploi">Emploi</option><option value="Jeunesse">Jeunesse</option><option value="Eau">Eau</option>
+<option value="Santé">Santé</option><option value="Agriculture">Agriculture</option><option value="Transport">Transport</option><option value="Ménages">Ménages</option>
+</select></div>
+<div class="selectBox"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18v2H3V5zm4 6h10v2H7v-2zm3 6h4v2h-4v-2z"/></svg><select id="formatFilter">
+<option value="Tous">Tous</option><option value="CSV">CSV</option><option value="Excel">Excel</option><option value="GeoJSON">GeoJSON</option><option value="SPSS">SPSS</option>
+</select></div>
+</div>
+<div class="resultsLine" id="resultsLine">—</div>
+<div class="dataGrid" id="dataGrid"></div>
+</div></main>
 <footer class="footer">
-  <div class="container footer__inner">
-    <p class="muted">© 2025 MetriqueLocale. Tous droits réservés.</p>
-    <div class="footer__links">
-      <a href="about.html">Présentation</a>
-      <a href="data.html">Données</a>
-      <a href="contact.html">Contact</a>
+  <div class="container">
+    <div class="footerGrid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h16v2H2V3h2v16zm6-2H7V9h3v8zm5 0h-3V5h3v12zm5 0h-3v-6h3v6z"/></svg></span>
+          <span>MetriqueLocale</span>
+        </a>
+        <p class="muted" style="margin-top:12px; max-width: 420px; color: rgba(255,255,255,.72);">
+          Des données locales fiables, prêtes à être utilisées pour la décision.
+          Collecte terrain, structuration rigoureuse et analyses actionnables.
+        </p>
+        <div style="display:flex; gap:12px; align-items:center; margin:10px 0;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span>contact@metriquelocale.com</span></div>
+        <div style="display:flex; gap:12px; align-items:center; margin:10px 0;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.8-.4 1.2-.2 1.3.4 2.8.7 4.3.7.7 0 1.2.5 1.2 1.2V21c0 .7-.5 1.2-1.2 1.2C10.7 22.2 1.8 13.3 1.8 2.7 1.8 2 2.3 1.5 3 1.5H6.3c.7 0 1.2.5 1.2 1.2 0 1.5.2 2.9.7 4.3.1.4 0 .9-.3 1.2l-2.3 2.6z"/></svg><span>+242 00 000 00 00</span></div>
+        <div style="display:flex; gap:12px; align-items:center; margin:10px 0;"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Brazzaville, Congo</span></div>
+      </div>
+      <div><h4>SERVICES</h4><p><a href="index.html#services">Collecte de données</a></p><p><a href="index.html#services">Structuration</a></p><p><a href="index.html#services">Analyses & Rapports</a></p></div>
+      <div><h4>RESSOURCES</h4><p><a href="data.html">Catalogue de données</a></p><p><a href="reports.html">Rapports interactifs</a></p><p><a href="studies.html">Études réalisées</a></p></div>
+      <div><h4>ENTREPRISE</h4><p><a href="about.html">Présentation</a></p><p><a href="about.html#processus">Méthodologie</a></p><p><a href="contact.html">Contact</a></p></div>
+    </div>
+    <div class="footerBottom">
+      <div>© 2026 MetriqueLocale. Tous droits réservés.</div>
+      <div style="display:flex; gap:18px; flex-wrap:wrap;"><a href="#">Mentions légales</a><a href="#">Politique de confidentialité</a></div>
     </div>
   </div>
 </footer>
-</body>
-</html>
+<script src="assets/app.js"></script>
+</body></html>
